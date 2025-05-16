@@ -1,0 +1,4 @@
+data/
+logs/
+/dags/__pycache__
+/etl_scripts/__pycache__

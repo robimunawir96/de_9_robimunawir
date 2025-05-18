@@ -1,30 +1,32 @@
-# Data Engineering Proyek: Analisis E-commerce Olist
+# 🛠️ Data Engineering untuk Insight E-Commerce
+Proyek ini merupakan implementasi end-to-end data engineering dengan fokus pada segmentasi pelanggan, analisis logistik (SLA pengiriman), dan analisis kepuasan pelanggan menggunakan dataset e-commerce Olist.
 
-## Inisialisasi Docker
-docker compose up airflow-init
-docker compose up
+## 📦 Deskripsi
+Dataset yang digunakan berasal dari Olist Store Dataset. Dataset mencakup:
+orders_dataset
+customers_dataset
+order_items_dataset
+products_dataset
+sellers_dataset
+order_reviews_dataset
+order_payments_dataset
+geolocation_dataset
+Semua file CSV diletakkan di dalam folder data/.
 
-## Deskripsi
-Proyek ini menggunakan dataset e-commerce untuk menganalisis:
-- Segmentasi Pelanggan berdasarkan RFM
-- Analisis SLA Pengiriman & Kinerja Logistik
-- Review & Kepuasan Pelanggan
+## 📊 Diagram Arsitektur Transformasi Data
 
-## Teknologi
-- Apache Airflow
-- PostgreSQL
-- Grafana
-- Docker
-- Python
 
-## Struktur
-- `dags/`: DAG Airflow
-- `etl_scripts/`: Script Extract, Transform, Load
-- `scripts/`: SQL pembuatan tabel
-- `data/`: Dataset mentah (CSV)
-- `logs/`: Log dari Airflow
+🛠️ Teknologi yang Digunakan
+| Teknologi          | Fungsi                                     |
+| ------------------ | ------------------------------------------ |
+| Python             | Scripting dan pemrosesan data              |
+| Apache Airflow     | Orkestrasi ETL harian                      |
+| PostgreSQL         | Database relasional untuk penyimpanan data |
+| Docker             | Containerisasi environment                 |
+| Grafana            | Visualisasi metrik dan analisis            |
+| Pandas, SQLAlchemy | Manipulasi data dan koneksi database       |
 
-## Kategori Segmen RFM:
+## 📦 Kategori Segmen RFM:
 | Segment                | Kriteria Umum       | Penjelasan Singkat                                       |
 | ---------------------- | ------------------- | -------------------------------------------------------- |
 | **Champions**          | R ≥ 4, F ≥ 4, M ≥ 4 | Pembeli paling aktif dan bernilai tinggi.                |
@@ -37,3 +39,14 @@ Proyek ini menggunakan dataset e-commerce untuk menganalisis:
 | **Hibernating**        | R ≤ 2, F ≤ 2, M ≤ 2 | Tidak aktif, pembelian jarang dan nilai rendah.          |
 | **Lost**               | R = 1, F = 1, M = 1 | Tidak pernah kembali, kontribusi rendah.                 |
 | **Others**             | Selain di atas      | Segmen umum.                                             |
+
+## ✅ Status
+| Komponen               | Status    |
+| ---------------------- | --------- |
+| Struktur Docker        | ✅ Selesai |
+| ETL RFM                | ✅ Selesai |
+| ETL Logistics (SLA)    | ✅ Selesai |
+| ETL Review Pelanggan   | ✅ Selesai |
+| PostgreSQL & Table Raw | ✅ Selesai |
+| Dashboard Grafana      | ✅ Selesai |
+| Dokumentasi            | ✅ Selesai |

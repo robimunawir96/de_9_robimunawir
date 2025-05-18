@@ -14,7 +14,7 @@ geolocation_dataset
 Semua file CSV diletakkan di dalam folder data/.
 
 ## 📊 Diagram Arsitektur Transformasi Data
-
+![Diagram Arsitektur Transformasi Data](https://github.com/user-attachments/assets/b0ed811d-0890-41a3-955f-db4d0f3484d9)
 
 🛠️ Teknologi yang Digunakan
 | Teknologi          | Fungsi                                     |

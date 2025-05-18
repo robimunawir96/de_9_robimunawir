@@ -1,3 +1,5 @@
 logs/
 /dags/__pycache__
-/etl_scripts/__pycache__
+/etl_scripts/logistics/__pycache__
+/etl_scripts/reviews/__pycache__
+/etl_scripts/rgm/__pycache__
